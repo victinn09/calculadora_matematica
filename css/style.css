@@ -1,15 +1,15 @@
 @font-face {
-    font-family:New Amsterdam;
-    src: url('../fonts/NewAmsterdam-Regular.ttf');
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
 }
+
 * {
-    font-size:12pt ;
+    font-size: 12pt;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #222;
-    font-family: Verdana, sans-serif;
-
+    font-family: Roboto;
 }
 
 #interface {
@@ -24,7 +24,6 @@
     display: block;
     width: 70%;
     margin: 0 auto 2rem auto;
-
 }
 
 #interface .cabecalho h2 {
@@ -34,9 +33,40 @@
     font-size: 1.5rem;
 }
 
+#interface main {
+    display: block;
+}
 
 #interface table {
     margin: 0 auto;
+    padding: .5rem;
+    border-radius: .25rem;
+    background-color: #ddd;
+    box-shadow: 0 0 2px rgba(0,0,0,.8);
+}
+
+#interface table #painel {
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #333;
+    border-radius: .25rem;
+}
+
+#interface table #painel #txt_operadores {
+    display: block;
+    color: #fafafa;
+    text-align: right;
+}
+
+#interface table #painel #txt_display {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    color: #fafafa;
+    text-align: right;
 }
 
 #interface table button {
@@ -44,10 +74,9 @@
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
-    border-radius: 0.5;
 }
 
-#interface table button#bt-acce{
+#interface table #bt-acce {
     font-size: .8rem;
     font-weight: bold;
     color: #7e0a0a;
@@ -56,9 +85,5 @@
 #interface table #bt-plus,
 #interface table #bt-equal {
     height: 102px;
-
 }
 
-#painel {
-    text-align: end;
-}
